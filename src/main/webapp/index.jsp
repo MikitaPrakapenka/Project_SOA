@@ -6,7 +6,7 @@
   	ROOM ID:<br>
   	<input type="text" name="idSalle"><br>
   	</form>
-    <button align= "center">GO</button>
+    <button href="/check" align= "center">GO</button>
     <!--  <p>Visit <a href="http://jersey.java.net">Project Jersey website</a>
     for more information on Jersey!-->
 </body>

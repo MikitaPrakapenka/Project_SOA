@@ -2,6 +2,7 @@ package insat.fr;
 
 public class Salle {
 	
+	private double id;
 	private double temperature;
 	private boolean chauffage;
 	private boolean lumiere;
@@ -9,9 +10,11 @@ public class Salle {
 	private boolean fenetre;
 	private boolean presence;
 	
-	public Salle(double temperature, boolean chauffage, boolean lumiere, boolean porte, boolean fenetre,
+	public Salle(double id, double temperature, boolean chauffage, boolean lumiere, boolean porte, boolean fenetre,
 			boolean presence) {
+		
 		super();
+		this.id=id;
 		this.temperature = temperature;
 		this.chauffage = chauffage;
 		this.lumiere = lumiere;
@@ -23,6 +26,10 @@ public class Salle {
 	public double getTemperature() {
 		return temperature;
 	}
+	public double getid() {
+		return id;
+	}
+	
 	public void setTemperature(double temperature) {
 		this.temperature = temperature;
 	}

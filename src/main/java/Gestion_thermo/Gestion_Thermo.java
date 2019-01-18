@@ -9,7 +9,7 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import fr.insa.soa.RestProject.Etudiant;
+import insat.fr.Batiment;
 import insat.fr.Salle;
 
 @Path("gestion_thermo")
@@ -31,18 +31,12 @@ public class Gestion_Thermo {
 	@GET
 	@Path("/get_temp_out")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Salle get_temp_out () {
+	public double get_temp_out () {
 		
 		
-		return getTemperature_out());
+		return Batiment.getTemperature_out();
 	}
 	
-	@POST
-	@Consumes({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
-	public void (Etudiant etudNouv) {
-		System.out.println("Ajout de l'etudiant  "+etudNouv.getNom()+" "+etudNouv.getPrenom()+" ok" + " et puis Ajout de l'etudiant  "+etudNouv.getBinome().getNom()+" "+etudNouv.getBinome().getPrenom()+" ok");
-
-	}
 	
 	
 	
